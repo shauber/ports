@@ -6,7 +6,7 @@ Index: deps/ada/ada.cpp
      case ada::state::SPECIAL_RELATIVE_OR_AUTHORITY:
        return "Special Relative or Authority";
 -    case ada::state::QUERY:
-+    case ada::state::ADAQUERY;
++    case ada::state::ADAQUERY:
        return "Query";
      case ada::state::PATH:
        return "Path";
@@ -24,7 +24,7 @@ Index: deps/ada/ada.cpp
          break;
        }
 -      case state::QUERY: {
-+      case state::ADAQUERY; {
++      case state::ADAQUERY: {
          ada_log("QUERY ", helpers::substring(url_data, input_position));
          if constexpr (store_values) {
            // Let queryPercentEncodeSet be the special-query percent-encode set
