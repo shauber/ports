@@ -5,8 +5,8 @@ Index: deps/v8/src/diagnostics/perf-jit.h
  
  #include "include/v8config.h"
  
--// {PerfJitLogger} is only implemented on Linux & Darwin.
--#if V8_OS_LINUX || V8_OS_DARWIN
+-// {LinuxPerfJitLogger} is only implemented on Linux.
+-#if V8_OS_LINUX
 +#if 1
  
  #include "src/logging/log.h"
